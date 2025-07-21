@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍹 Fresh Juice Bar | Healthy & Tasty</title>
+    <style>
+        /* CSS Styles (Embedded) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5%;
+            background: #4CAF50;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+            transform: scale(1.1);
+        }
+        .hero {
+            text-align: center;
+            padding: 5rem 0;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a');
+            background-size: cover;
+            color: white;
+        }
+        .menu {
+            padding: 3rem 5%;
+        }
+        .juice-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3, .card p {
+            padding: 0 1rem;
+            text-align: center;
+        }
+        /* New Contact Section Styles */
+        .contact {
+            padding: 3rem 5%;
+            background: #f1f1f1;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #4CAF50;
+            font-size: 24px;
+        }
+        .map {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">🍹 FreshJuice</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>100% Natural Fresh Juices</h1>
+        <p>Healthy & Delicious</p>
+        <button id="order-btn">Order Now</button>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="juice-cards">
+            <div class="card">
+                <img src="orange.jpg" alt="Orange Juice">
+                <h3>Orange Blast</h3>
+                <p>₹99</p>
+            </div>
+            <div class="card">
+                <img src="mango.jpg" alt="Mango Juice">
+                <h3>Mango Fiesta</h3>
+                <p>₹119</p>
+            </div>
+            <div class="card">
+                <img src="apple.jpg" alt="Aple Juice">
+                <h3>Apple Fizzi</h3>
+                <p>₹109</p>
+            </div>
+            <div class="card">
+                <img src="pomegranate.avif" alt="Pomegranate Juice">
+                <h3>Pomegranate Chaska</h3>
+                <p>₹149</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Phone Number">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/919599574494" target="_blank">📱 WhatsApp</a>
+            <a href="tel:+919599574494">📞 Call Us</a>
+            <a href="mailto:info@freshjuice.com">✉️ Email</a>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.415678203712!2d77.20637231508257!3d28.62873978242383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5e2b000001%3A0x7f1a6b5c6b2e4b1d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- JavaScript (Embedded) -->
+    <script>
+        // Order Button Click Effect
+        document.getElementById('order-btn').addEventListener('click', () => {
+            alert('Order placed! 🎉 We\'ll contact you soon.');
+        });
+
+        // Juice Card Animation
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent! We\'ll reply within 24 hours.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
